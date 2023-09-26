@@ -22,8 +22,7 @@ class MainActivity : AppCompatActivity() {
         val spinnerTicketType = findViewById<Spinner>(R.id.spinnerTicketType)
         val buttonPesan = findViewById<Button>(R.id.buttonPesan)
 
-        // Menambahkan opsi tiket ke dalam Spinner
-        val ticketTypes = arrayOf("Bisnis", "Ekonomi", "Dll") // Ganti dengan daftar jenis tiket yang Anda inginkan
+        val ticketTypes = arrayOf("Bisnis", "Ekonomi", "Dll")
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, ticketTypes)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinnerTicketType.adapter = adapter
